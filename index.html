@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" id="myinput" />
+    <button id="mybtn">Submit</button>
+  </body>
+</html>
+
+<script>
+  let monthName = document.getElementById("myinput");
+  let Submit = (document.getElementById("mybtn").onclick = function () {
+    let monthNameValue = monthName.value;
+    monthNameValue = monthNameValue.toLowerCase();
+    if (monthNameValue == "january") {
+      alert("January has 31 days");
+    } else if (monthNameValue == "february") {
+      alert("February has 28 days");
+    } else if (monthNameValue == "march") {
+      alert("March has 31 days");
+    } else if (monthNameValue == "april") {
+      alert("April has 30 days");
+    } else if (monthNameValue == "may") {
+      alert("May has 31 days");
+    } else if (monthNameValue == "june") {
+      alert("June has 30 days");
+    } else if (monthNameValue == "july") {
+      alert("July has 31 days");
+    } else if (monthNameValue == "august") {
+      alert("August has 31 days");
+    } else if (monthNameValue == "september") {
+      alert("September has 30 days");
+    } else if (monthNameValue == "october") {
+      alert("October has 31 days");
+    } else if (monthNameValue == "november") {
+      alert("November has 30 days");
+    } else if (monthNameValue == "december") {
+      alert("December has 31 days");
+    } else {
+      alert("invalid");
+    }
+  });
+</script>
